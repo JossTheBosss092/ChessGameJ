@@ -7860,15 +7860,15 @@ const M=(base,cloud,vein,soft,line,seed)=>({k:'marble',o:{seed,scale:3.2,warp:1.
 /* contrast between the light and dark squares of every theme is checked by pers/contrast.js */
 const BT={
  marble:{sw:[[236,239,232],[104,134,108]]},
- gold:{L:M([226,196,120],[205,170,88],[250,236,190],.3,.5,31),D:M([16,16,18],[34,32,30],[212,172,84],.5,.9,32),frame:0x2a2412,edge:0xc9a24a,inlay:0x8a6a22,label:'#e8c76a',rough:.2,cc:.7},
+ gold:{L:M([226,196,120],[205,170,88],[250,236,190],.3,.5,31),D:M([58,52,42],[46,42,34],[212,172,84],.5,.9,32),frame:0x2a2412,edge:0xc9a24a,inlay:0x8a6a22,label:'#e8c76a',rough:.2,cc:.7},
  blue:{L:M([168,198,238],[148,182,228],[220,236,255],.3,.6,33),D:M([30,56,120],[22,42,96],[110,150,220],.45,.8,34),frame:0x1b2b55,edge:0x8fb0e6,inlay:0x24407a,label:'#cfe0ff',rough:.22,cc:.5},
  emerald:{L:M([170,214,184],[150,200,168],[226,246,232],.3,.6,35),D:M([22,96,64],[16,78,50],[110,190,150],.45,.8,36),frame:0x0f3b29,edge:0x7fc79d,inlay:0x1d6b48,label:'#d4f5e2',rough:.22,cc:.5},
  walnut:{L:{k:'wood',base:[222,184,128],grain:[184,142,88],seed:41},D:{k:'wood',base:[100,62,38],grain:[58,32,18],seed:42},frame:0x4a2e1a,edge:0x6b4426,inlay:0x2e1b0e,label:'#f0d9b0',rough:.42,cc:.3},
- obsidian:{L:M([74,74,82],[60,60,68],[124,124,136],.3,.6,43),D:M([12,12,14],[20,20,24],[66,66,76],.4,.8,44),frame:0x0b0b0d,edge:0x3a3a42,inlay:0x1a1a20,label:'#bfbfca',rough:.1,cc:1},
+ obsidian:{L:M([112,112,124],[96,96,108],[160,160,172],.3,.6,43),D:M([50,50,58],[40,40,48],[96,96,108],.4,.8,44),frame:0x0b0b0d,edge:0x3a3a42,inlay:0x1a1a20,label:'#bfbfca',rough:.1,cc:1},
  ivory:{L:M([246,240,224],[236,228,206],[214,200,170],.15,.3,45),D:M([206,190,158],[196,178,142],[160,138,100],.2,.5,46),frame:0xe8dfc8,edge:0xbba983,inlay:0xa8946a,label:'#5a4a2a',rough:.3,cc:.4},
  crimson:{L:M([226,140,140],[214,120,124],[250,200,200],.3,.6,47),D:M([112,18,30],[92,12,24],[190,70,80],.45,.8,48),frame:0x3a0b12,edge:0xc86a70,inlay:0x6a1420,label:'#ffd9d9',rough:.22,cc:.5},
  arctic:{L:M([244,249,253],[226,238,248],[176,208,236],.3,.6,49),D:M([150,190,224],[130,176,216],[226,240,252],.4,.7,50),frame:0xd9e8f5,edge:0x9ec2e2,inlay:0x7fa8cf,label:'#2c4a66',rough:.18,cc:.7},
- carbon:{L:{k:'carbon',base:[70,72,78],hi:[132,136,146]},D:{k:'carbon',base:[16,16,18],hi:[52,54,60]},frame:0x151517,edge:0x4a4a50,inlay:0x222226,label:'#aeb4c0',rough:.3,cc:1}
+ carbon:{L:{k:'carbon',base:[100,102,110],hi:[156,160,170]},D:{k:'carbon',base:[40,40,44],hi:[84,86,94]},frame:0x151517,edge:0x4a4a50,inlay:0x222226,label:'#aeb4c0',rough:.3,cc:1}
 };
 /* swatch colours for the picker (average colour of each square type) */
 const avg=o=>o.k==='marble'?o.o.base:o.k==='wood'?[mix(o.base[0],o.grain[0],.4),mix(o.base[1],o.grain[1],.4),mix(o.base[2],o.grain[2],.4)]:[mix(o.base[0],o.hi[0],.4),mix(o.base[1],o.hi[1],.4),mix(o.base[2],o.hi[2],.4)];
